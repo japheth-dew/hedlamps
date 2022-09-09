@@ -5,11 +5,11 @@ import { AiOutlineFullscreenExit } from "react-icons/ai";
 
 const MobileNav = ({ setOpen }) => {
   return (
-    <div className="backdrop-blur bg-white/60 w-full  absolute md:hidden   top-0 bottom-0 left-0  inset-0 ">
+    <div className={`backdrop-blur bg-white/60 w-full  absolute md:hidden   top-0 bottom-0 left-0  inset-0 `}>
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        exit={{ scale: 0 }}
+        exit={{ scale: 0.3 }}
         transition={{
           type: "spring",
           stiffness: 260,
